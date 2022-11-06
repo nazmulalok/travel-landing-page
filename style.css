@@ -1,0 +1,397 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #0064D2;
+    --secondary-color: #FEDE00;
+    --tertiary-color: #FFFFFF;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+}
+
+img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+}
+
+/* Common CSS */
+
+p {
+    color: #4A515F;
+}
+
+.padding-sec {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+a.common-btn {
+    display: inline-block;
+    background: #FEDE00;
+    border-radius: 25px;
+    padding: 10px 25px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    color: #0064D2;
+}
+
+a.common-btn.outline-btn {
+    color: var(--tertiary-color);
+    background: transparent;
+    border: 1px solid var(--tertiary-color);
+}
+
+a.common-btn.white-btn {
+    background: var(--tertiary-color);
+}
+
+.image-holder {
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+/* Heading CSS */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 45px;
+}
+
+h3 {
+    font-size: 40px;
+}
+
+h4 {
+    font-size: 36px;
+}
+
+h5 {
+    font-size: 32px;
+}
+
+h6 {
+    font-size: 28px;
+}
+
+/* Header CSS */
+
+header {
+    background: var(--primary-color);
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+header .logo {
+    color: var(--tertiary-color);
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.header-menu {
+    display: flex;
+    gap: 3rem;
+}
+
+.header-menu li {
+    list-style-type: none;
+}
+
+.header-menu li a {
+    color: var(--tertiary-color);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+/* Slider CSS */
+
+.slider {
+    background: var(--primary-color);
+    min-height: 550px;
+    padding-top: 100px;
+    padding-bottom: 60px;
+}
+
+.slider-heading {
+    color: var(--tertiary-color);
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 74px;
+}
+
+.slider p {
+    color: var(--tertiary-color);
+    font-size: 20px;
+}
+
+.slider img {
+    width: 500px;
+}
+
+a.play-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--tertiary-color);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.play-btn .fa-play {
+    width: 40px;
+    height: 40px;
+    color: var(--primary-color);
+    font-size: 20px;
+    background: var(--secondary-color);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+/* 2nd Section */
+
+.destination-sec span {
+    font-weight: 600;
+    font-size: 40px;
+    color: var(--primary-color);
+    line-height: 50px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.destination-sec p {
+    color: #4A515F;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+/* Why Choose Sec */
+
+.choose-box span {
+    height: 55px;
+    width: 55px;
+    background: var(--primary-color);
+    border-radius: 50%;
+    color: var(--tertiary-color);
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px;
+}
+
+.choose-box p:nth-child(2) {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 32px;
+    color: #1A1824;
+}
+
+.choose-box p:nth-child(3) {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #4A515F;
+}
+
+.choose-sec .image-holder {
+    position: relative;
+}
+
+.choose-sec .image-holder img:nth-child(1) {
+    position: relative;
+}
+
+.choose-sec .image-holder img:nth-child(2) {
+    position: absolute;
+    left: -10px;
+    bottom: 85px;
+}
+
+.user-sec {
+    position: absolute;
+    top: 75px;
+    left: 0;
+    background: var(--tertiary-color);
+    padding: 10px 30px;
+    border-radius: 38px;
+    box-shadow: 0px 20px 70px rgba(0, 0, 0, 0.08);
+}
+
+.user-sec p {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.user-sec span {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.user-sec span:nth-child(2) {
+    color: #4A515F;
+}
+
+.user-sec span:nth-child(3) {
+    color: var(--secondary-color)
+}
+
+/* Recommendation Sec CSS */
+
+.recom-sec {
+    background: #FEF6BE;
+}
+
+.arrows i {
+    width: 44px;
+    height: 44px;
+    color: var(--primary-color);
+    border-radius: 50%;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrows .fa-arrow-left {
+    background: #ffed7aba;
+}
+
+.arrows .fa-arrow-right {
+    background: var(--secondary-color);
+}
+
+.trip-box {
+    background: var(--tertiary-color);
+    border: 1px solid #D6CECE;
+    border-radius: 29px;
+    padding: 20px;
+    position: relative;
+}
+
+.trip-img {
+    position: relative;
+}
+
+.trip-img img {
+    width: 100%;
+}
+
+.trip-tool {
+    background: var(--tertiary-color);
+    padding: 3px 10px;
+    border-radius: 16px;
+}
+
+.trip-tool.rating {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+.trip-tool span {
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+}
+
+.trip-tool i {
+    color: var(--secondary-color);
+}
+
+.trip-tool.country {
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+}
+
+.trip-heading {
+    font-weight: 600;
+    font-size: 27px;
+    line-height: 34px;
+    color: #1A1824;
+}
+
+.trip-desc span {
+    color: var(--primary-color);
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.trip-desc p {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.border-right {
+    border-right: 1px solid #D0B0B0;
+}
+
+.review-user p:first-child {
+    color: #1A1824;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.review-user p:last-child {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #69657C;
+    margin-bottom: 0px;
+}
+
+.discount-sec {
+    background: var(--primary-color);
+    border-radius: 44px;
+    padding: 100px;
+    color: var(--tertiary-color);
+}
+
+footer .header-menu li a {
+    color: #695656;
+}
+
+footer .logo {
+    color: #000;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.footer-last {
+    border-top: 1px solid #B4A9A9;
+    padding-top: 50px;
+}
+
+.copyright {
+    color: #817E7E;
+    font-size: 14px;
+}
+
+.footer-last span {
+    color: #000000;
+    font-size: 14px;
+}
